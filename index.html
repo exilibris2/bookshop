@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="style.css">  
            <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -52,11 +53,21 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
+/*start search*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+              .input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+} 
 </style>  
    
     </head>
@@ -67,7 +78,6 @@ body {
         
   <div id="mySidenav" class="sidenav" class="text-right">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">o molarni</a>
   <a href="#">nowości</a>
  <a href="#">używane</a>
   <a href="#">rejestracja</a>
@@ -88,23 +98,30 @@ function closeNav() {
 </script>
      
   </div>
-</div> 
+<input type="text" name="search" placeholder="Search..">
       <div class="page-header">
       <div class="container text-center">  
            <div class="jumbotron">
   <h1>Molarnia</h1>
-               <h3><abbr></abbr></h3></div>
+               <footer> <h3><small><i>antykwariat i księgarnia online</i></small></h3></footer>
+              <ul class="breadcrumb">
+    <li><a href="#">Ebook</a></li>
+    <li><a href="#">Audioobok</a></li>
+    <li><a href="#">Album</a></li>
+    <li class="active">Vacation</li>        
+  </ul>
+          </div>
          
      
       
           
         <div class="dropdown text-right">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Sklepik
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">kupuj i sprzedawaj
     <span class="caret"></span></button>
     <ul class="dropdown-menu dropdown-menu-right">
     
         <li class="dropdown-header">Strefa klienta</li>
-<li><a href="#">Sprzedaż</a></li>
+<li><a href="upload.html">Sprzedaż</a></li>
       <li><a href="#">Zakup</a></li>
         <li class="divider"></li>
       <li><a href="login.html">Logowanie</a></li>
@@ -168,9 +185,7 @@ function closeNav() {
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-    
-
+          
               <div class="container text-left">
 
  <div class="row">
@@ -182,36 +197,27 @@ function closeNav() {
      <div class="col-sm-4"><h4 class="text-left"> Dodaj do spichlerza</h4>
       <p>s. Aenean ac posuere sed, vehicula neque. Nulla in faucibus et, neque. Donec pulvinar ut, accumsan at, mattis id, urna. Nulla ac ligula lorem dapibus sit amet felis non nulla. Morbi scelerisque mauris orci, sollicitudin fermentum, metus hendrerit sollicitudin. Nullam vulputate tempor scelerisque, diam. Etiam dolor. Nulla eleifend adipiscing sollicitudin. Donec consectetuer vestibulum id, lacinia ut, lectus. Fusce nulla. Maecenas rhoncus. Praesent scelerisque ligula, nonummy nisl in augue. Maecenas gravida, nisl at tellus tortor, non dui eu.</p></div>
 </div>
-         <h4 class="bg-primary" >Kawałek ciasteczka literackiego</h4><pre class="pre-scrollable" class="text-left">Narodziny, żywot i upadek gazety podziemnej (fragment) by Charles Bukowski.
+                  
+                  
+         <h4 class="bg-primary" >Kawałek ciasteczka literackiego</h4><pre class="pre-scrollable" class="text-left">SIERPIEŃ Bruno Schulz (fragment)
 
-Z początku było kilka spotkań u Joe Hyansa, ale zwykle przychodziłem zalany, więc niewiele pamiętam z powstania „Otwartej Cipy”, gazety podziemnej, i dopiero później mówili mi, co się działo. A raczej, co wyrabiałem.
+1
 
-Hyans: — Powiedziałeś, że wyrzucisz wszystkich na ulicę i że zaczniesz od tego kaleki na wózku. Wtedy on się rozpłakał i ludzie zaczęli wychodzić. Walnąłeś jednego faceta w głowę butelką.
+W lipcu ojciec mój wyjeżdżał do wód i zostawiał mnie z matką i starszym bratem na pastwę białych od żaru i oszołamiających dni letnich. Wertowaliśmy, odurzeni światłem, w tej wielkiej księdze wakacji, której wszystkie karty pałały od blasku i miały na dnie słodki do omdlenia miąższ złotych gruszek.
 
-Cherry (żona Hyansa): — Za nic nie chciałeś iść do domu i wypiłeś całą butelkę whisky i powtarzałeś, że wyruchasz mnie przy biblioteczce.
+Adela wracała w świetliste poranki, jak Pomona z ognia dnia rozżagwionego, wysypując z koszyka barwną urodę słońca - lśniące, pełne wody pod przejrzystą skórką czereśnie, tajemnicze, czarne wiśnie, których woń przekraczała to, co ziszczało się w smaku; morele, w których miąższu złotym był rdzeń długich popołudni; a obok tej czystej poezji owoców wyładowywała nabrzmiałe siłą i pożywnością płaty mięsa z klawiaturą żeber cielęcych, wodorosty jarzyn, niby zabite głowonogi i meduzy - surowy materiał obiadu o smaku jeszcze nie uformowanym i jałowym, wegetatywne i telluryczne ingrediencje obiadu o zapachu dzikim i polnym.
 
-— I co, zrobiłem to?
+Przez ciemne mieszkanie na pierwszym piętrze kamienicy w rynku przechodziło co dzień na wskroś całe wielkie lato: cisza drgających słojów powietrznych, kwadraty blasku śniące żarliwy swój sen na podłodze; melodia katarynki, dobyta z najgłębszej złotej żyły dnia; dwa, trzy takty refrenu, granego gdzieś na fortepianie, wciąż na nowo, mdlejące w słońcu na białych trotuarach, zagubione w ogniu dnia głębokiego. Po sprzątaniu Adela zapuszczała cień na pokoje, zasuwając płócienne story. Wtedy barwy schodziły o oktawę głębiej, pokój napełniał się cieniem, jakby pogrążony w światło głębi morskiej, jeszcze mętniej odbity w zielonych zwierciadłach, a cały upał dnia oddychał na storach, lekko falujących od marzeń południowej godziny.
 
-— Nie.
+W sobotnie popołudnia wychodziłem z matką na spacer. Z półmroku sieni wstępowało się od razu w słoneczną kąpiel dnia. Przechodnie, brodząc w złocie, mieli oczy zmrużone od żaru, jakby zalepione miodem, a podciągnięta górna warga odsłaniała im dziąsła i zęby. I wszyscy brodzący w tym dniu złocistym mieli ów grymas skwaru, jak gdyby słońce nałożyło swym wyznawcom jedną i tę samą maskę - złotą maskę bractwa słonecznego; i wszyscy, którzy szli dziś ulicami, spotykali się, mijali, starcy i młodzi, dzieci i kobiety, pozdrawiali się w przejściu tą maską, namalowaną grubą, złotą farbą na twarzy, szczerzyli do siebie ten grymas bakchiczny - barbarzyńską maskę kultu pogańskiego.
 
-— Aha, no to następnym razem.
-
-Hyans: — Posłuchaj, Bukowski, próbujemy się jakoś zorganizować, a ty przychodzisz i to rozpirzasz. Jesteś najwstrętniejszym moczymordą, jakiego w życiu widziałem!
-
-— Dobra, kładę na to lachę. Pierdolę. Kogo obchodzi jakaś gazeta?
-
-— O nie, chcemy, żebyś pisał felieton. Uważamy, że jesteś najlepszym pisarzem w Los Angeles.
-
-Podniosłem rękę ze szklanką.
-
-— To skurwysyńska obraza! Nie przyszedłem tu, żeby mnie obrażano!</pre>
-        <p class="bg-success" >Użyj<kbd>ctrl + p</kbd> aby otworzyć okno drukowania</p>  
-      </div>
-      
+Rynek był pusty i żółty od żaru, wymieciony z kurzu gorącymi wiatrami, jak biblijna pustynia. </pre>
+                  
+       
       
       <div class="container">
-   <div class="col-sm-5"><h2 class="text-left">Nowości</h2>
-  <p class="text-center">...top zamolowane</p>            
+   <div class="col-sm-5"><h2 class="text-left">Księgarnia</h2>
+  <p class="text-center"> Top 10</p>            
   <table class="table table-hover">
     <thead>
       <tr>
@@ -248,9 +254,8 @@ Podniosłem rękę ze szklanką.
 </div>
           <div class="col-sm-1"></div>    
  <div class="col-sm-5">
-     <h2 class="text-left">Nadgryzione</h2>
-  <p class="text-center">...ale do przeczytania</p>            
-  <table class="table table-hover">
+     <h2 class="text-left">Antykwariat</h2>
+             <table class="table table-hover">
     <thead>
       <tr>
         <th>Tytuł</th>
@@ -276,7 +281,18 @@ Podniosłem rękę ze szklanką.
       </tr>
     </tbody>
   </table>
-</div>
-
+          </div>
+                  </div>
+                  </div>
+<div> <ul class="pager text-center">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+ </div>  
+      
+  <div class="footer"><address>
+      Exilibris Limited
+      United Kingdom
+      Glasgow</address></div>
   </body>
 </html>
